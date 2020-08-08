@@ -60,12 +60,9 @@ const reducer = (state = initialState, action) => {
     case "BOOK_ADDED_IN_CART":
       return updateCart(state, action, 1);
     case "BOOK_DELETED_IN_CART":
-      return {
-        ...state,
-      };
-    /* console.log(state.cartItems[0].count);
+      console.log(state.cartItems[0].count);
       state.cartItems[0].count = 0;
-      return updateCart(state, action, 0); */
+      return updateCart(state, action, 0);
     default:
       return state;
   }
